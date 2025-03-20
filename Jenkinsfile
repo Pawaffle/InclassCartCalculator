@@ -19,11 +19,7 @@ pipeline {
                 bat 'mvn clean install'
             }
         }
-        stage('Publish Coverage Report') {
-            steps {
-                jacoco()
-            }
-        }
+
 
          stage('Build Docker Image') {
             steps {
